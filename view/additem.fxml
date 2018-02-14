@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddItemController">
+   <children>
+      <AnchorPane layoutX="-4.0" prefHeight="85.0" prefWidth="708.0" style="-fx-background-color: #d32f2f;">
+         <children>
+            <Label alignment="CENTER" layoutX="268.0" layoutY="27.0" prefHeight="36.0" prefWidth="172.0" text="ToDos" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="noTaskLabel" alignment="CENTER" layoutX="243.0" layoutY="219.0" prefHeight="38.0" prefWidth="215.0" text="No tasks today, yet!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="addButton" fitHeight="71.0" fitWidth="83.0" layoutX="315.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/ic_lightbulb_outline_black_18dp_2x.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
